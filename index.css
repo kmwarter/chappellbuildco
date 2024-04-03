@@ -1,0 +1,51 @@
+main {
+  flex: 1 1 auto;
+  min-height: 768px;
+  background-image: url("images/home/portland_adu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 640px;
+  margin: 24px;
+  font-family: serif;
+  font-size: 80px;
+  line-height: 90px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  width: 530px;
+  margin: 24px;
+  font-family: grotesque-light, serif;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  border: none;
+  background: none;
+  margin: 24px;
+  width: 240px;
+  height: 60px;
+  font-family: grotesque-light, serif;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}

@@ -1,0 +1,82 @@
+/* Normalization */
+
+@font-face {
+  font-family: 'grotesque';
+  src: url('fonts/brandon-grotesque-black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'grotesque-light';
+  src: url('fonts/brandon-grotesque-light.otf') format('opentype');
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 40px 40px;
+  width: 179px;
+  height: 46px;
+}
+
+nav {
+  margin: 24px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 24px;
+  font-family: grotesque-light, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Theme Black */
+
+.theme-white {
+  color: #fff;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  nav ul {
+    flex-direction: column;
+  }
+} */
