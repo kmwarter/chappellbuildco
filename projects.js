@@ -18,7 +18,7 @@ const imageExists = async (url) => {
       // Create a new image element 
       var img = document.createElement('img'); 
       img.src = assumedSrc;
-      img.className = 'project-image';
+      img.id = 'project-image';
       
       // Get two column elements
       const columns = document.getElementsByClassName("column");

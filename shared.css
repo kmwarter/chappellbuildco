@@ -34,34 +34,38 @@ body {
 header {
   width: 100%;
   position: absolute;
-  display: flex;
-  align-items: center;
 }
 
-.logo {
-  margin: 48px;
+#logo {
   width: 179px;
   height: 46px;
 }
 
+#menu {
+  margin-top: -12px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav {
-  margin: 24px;
+  position: relative;
+  margin: 40px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  font-family: grotesque-light, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 nav li {
   margin: 0 24px;
-  font-family: grotesque-light, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
 }
 
 a {
@@ -69,14 +73,11 @@ a {
   color: inherit;
 }
 
-/* Theme Black */
-
-.theme-white {
+#theme-white {
   color: #fff;
 }
 
-/* Mobile */
-.hamburger {
+#hamburger {
   display: none;
   width: 48px;
   height: 48px;
@@ -84,13 +85,28 @@ a {
   cursor: pointer;
 }
 
+#open-header {
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  align-items: initial;
+}
+
 @media only screen and (max-width: 768px) {
   nav ul {
     display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 40px;
+    z-index: -1;
   }
 
-  .hamburger {
+  #hamburger {
     display: inherit;
   }
 }
