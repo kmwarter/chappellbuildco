@@ -11,7 +11,7 @@ const imageExists = async (url) => {
   // While images exist in the projects folder to display we will display them
   let imageNumber = 1;
   while (imageNumber) {
-    const assumedSrc = `images/projects/image_${imageNumber}.jpg`
+    const assumedSrc = `./images/projects/image_${imageNumber}.jpg`
     const imgExists = await imageExists(assumedSrc);
 
     if (imgExists) {
