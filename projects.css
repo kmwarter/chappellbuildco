@@ -9,16 +9,16 @@ main {
 .column {
   display: flex;
   flex-direction: column;
-  margin: 6px;
 }
 
-.project-image {
+#project-image {
   width: 100%;
-  margin: 6px;
+  padding: 6px;
 }
 
 @media only screen and (max-width: 768px) {
   main {
     flex-direction: column;
+    padding: 40px 6px;
   }
 }
