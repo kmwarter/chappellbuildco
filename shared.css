@@ -39,7 +39,7 @@ header {
 }
 
 .logo {
-  margin: 40px 40px;
+  margin: 48px;
   width: 179px;
   height: 46px;
 }
@@ -58,7 +58,7 @@ nav ul {
 }
 
 nav li {
-  margin: 24px;
+  margin: 0 24px;
   font-family: grotesque-light, sans-serif;
   font-size: 22px;
   font-weight: bold;
@@ -75,8 +75,22 @@ a {
   color: #fff;
 }
 
-/* @media only screen and (max-width: 1000px) {
+/* Mobile */
+.hamburger {
+  display: none;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
   nav ul {
+    display: none;
     flex-direction: column;
   }
-} */
+
+  .hamburger {
+    display: inherit;
+  }
+}
